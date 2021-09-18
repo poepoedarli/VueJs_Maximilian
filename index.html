@@ -23,6 +23,9 @@
 
         <!-- for attributes, interpolation can't work, so have to use binding syntax -->
         <a v-bind:href="websiteLink">Vue Website</a> 
+
+        <!-- calling methods inside interpolation -->
+        <p>{{ rand() }}</p>
 	</section>
   </body>
 </html>

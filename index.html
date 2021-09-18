@@ -18,7 +18,11 @@
 	</header>
 	<section id="course-goal">
         <h2>My Course Goal</h2>
-        <p >{{courseName}}</p>
+        <!-- Interpolation works only between html tags -->
+        <p >{{courseName}}</p> 
+
+        <!-- for attributes, interpolation can't work, so have to use binding syntax -->
+        <a v-bind:href="websiteLink">Vue Website</a> 
 	</section>
   </body>
 </html>

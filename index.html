@@ -29,6 +29,15 @@
 
         <!-- showing HTML tags, by using v-html -->
         <p v-html="courseGoal()"></p>
+
+        <!-- Events -->
+        <input type="text" value="" v-on:input="setCustomerName($event, 'Kg')">
+        <p>Hello {{customerName}}</p>
+
+        <!-- Events with modifiers -->
+        <p>Events with modifiers (Enter)</p>
+        <input type="text" value="" v-on:keyup.enter="setCusName($event, 'Kg')">
+        <p>Hello {{cusName}}</p>
 	</section>
   </body>
 </html>

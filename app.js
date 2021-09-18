@@ -5,7 +5,9 @@ const app = Vue.createApp({
             'courseName': 'Vue - The complete guide',
             'websiteLink': 'https://vuejs.org',
             'courseGoalA' : '<h1>Learn Vue</h1>',
-            'courseGoalB' : '<h1>Master Vue</h1>'
+            'courseGoalB' : '<h1>Master Vue</h1>',
+            'customerName' : '',
+            'cusName' : ''
         }
     },
     methods: {//it also reserved name, like as "data", 
@@ -21,6 +23,12 @@ const app = Vue.createApp({
             let value = Math.random();
             if(value<0.5) return this.courseGoalA;
             else return this.courseGoalB;
+        },
+        setCustomerName(event, last_name){
+            this.customerName = event.target.value +' '+last_name;
+        },
+        setCusName(event, last_name){
+            this.cusName = event.target.value +' '+last_name;
         }
     },
 });

@@ -25,7 +25,10 @@
         <a v-bind:href="websiteLink">Vue Website</a> 
 
         <!-- calling methods inside interpolation -->
-        <p>{{ rand() }}</p>
+        <p>{{ courseGoal() }}</p>
+
+        <!-- showing HTML tags, by using v-html -->
+        <p v-html="courseGoal()"></p>
 	</section>
   </body>
 </html>
